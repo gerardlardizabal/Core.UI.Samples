@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Base.Core.App.Models.Tables.TablesModel>;
+@{
+    ViewData["Title"] = "Tables";
+}
+
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">Renedering Tables</li>
+</ol>
+<div class="container-fluid">
+    <div class="animated fadeIn">
+        <div class="card">
+            <div class="card-header">Rendering data to Table</div>
+            <div class="card-body">
+                <input class="form-control" type="text" /><a class="btn btn-primary" asp-controller="Tables" asp-action="Tables">Display Data</a><br />
+                    @await Html.PartialAsync("~/Views/Shared/Partials/TableList.cshtml", Model);
+            </div>
+        </div>
+    </div>
+
+</div>

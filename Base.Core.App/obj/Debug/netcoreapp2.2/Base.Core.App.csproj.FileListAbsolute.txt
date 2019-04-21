@@ -135,3 +135,7 @@ C:\Users\Gerard\Desktop\Dev Projects\Core.UI.Samples\Base.Core.App\obj\Debug\net
 C:\Users\Gerard\Desktop\Dev Projects\Core.UI.Samples\Base.Core.App\obj\Debug\netcoreapp2.2\Base.Core.App.pdb
 C:\Users\Gerard\Desktop\Dev Projects\Core.UI.Samples\Base.Core.App\obj\Debug\netcoreapp2.2\Razor\Views\CreatingPages\CreatingPages.g.cshtml.cs
 C:\Users\Gerard\Desktop\Dev Projects\Core.UI.Samples\Base.Core.App\obj\Debug\netcoreapp2.2\Razor\Views\CreatingPages\SampleView.g.cshtml.cs
+C:\Users\Gerard\Desktop\Dev Projects\Core.UI.Samples\Base.Core.App\obj\Debug\netcoreapp2.2\Razor\Views\FormSamples\FormSamples.g.cshtml.cs
+C:\Users\Gerard\Desktop\Dev Projects\Core.UI.Samples\Base.Core.App\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\ModalMessage\ModalMessage.g.cshtml.cs
+C:\Users\Gerard\Desktop\Dev Projects\Core.UI.Samples\Base.Core.App\obj\Debug\netcoreapp2.2\Razor\Views\Tables\Tables.g.cshtml.cs
+C:\Users\Gerard\Desktop\Dev Projects\Core.UI.Samples\Base.Core.App\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Partials\TableList.g.cshtml.cs

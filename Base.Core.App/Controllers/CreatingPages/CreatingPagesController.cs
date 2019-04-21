@@ -27,7 +27,7 @@ namespace Base.Core.App.Controllers.Examples
         }
 
         //Here is an example of a personalized method but returns a custom View 
-        //the controller would by default look for a View named SampleCustomView
+        //the controller would by default look for a View named SampleCustomView 
         //on either the Views/CreatingPages Folder, or the View/Shared Folder
         [Route("sampleRoute")]
         public IActionResult SampleMethod2()

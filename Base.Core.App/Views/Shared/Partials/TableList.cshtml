@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Base.Core.App.Models.Tables.TablesModel>;
+@{
+    ViewData["Title"] = "TableList";
+}
+
+@if (Model != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">First Name</th>
+                <th scope="col">Location</th>
+                <th scope="col">Position</th>
+                <th scope="col">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+                @foreach (var row in Model)
+                {
+                    <tr>
+                        <th scope="row">@row.name</th>
+                        <td>@row.location</td>
+                        <td>@row.position</td>
+                        <td>@row.status</td>
+                    </tr>
+
+                }
+            }
+        </tbody>
+    </table>
+}

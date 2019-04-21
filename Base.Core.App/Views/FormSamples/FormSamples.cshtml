@@ -1,0 +1,25 @@
+﻿@model Base.Core.App.Models.FormSamples.FormSampleModel.SampleModel1;
+
+@{
+    ViewData["Title"] = "FormSamples";
+}
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">Form Samples</li>
+</ol>
+<div class="container-fluid">
+    <div class="animated fadeIn">
+        <div class="card">
+            <div class="card-header">Standard Form with View Model</div>
+            <div class="card-body">
+                <form asp-controller="FormSamples" asp-action="SampleMethod1" method="post">
+                    First Name:  <input class="form-control" asp-for="FirstName" /> <br />
+                    Last  Name: <input class="form-control" asp-for="LastName" /><br />
+                    Email : <input class="form-control" asp-for="Email" /><br />
+                    <button class="btn btn-primary" type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
