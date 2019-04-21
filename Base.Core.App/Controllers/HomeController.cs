@@ -10,7 +10,6 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Base.Core.App.Controllers
 {
-    [Authorize]
     public class HomeController : Controller
     {
         public IActionResult Index()

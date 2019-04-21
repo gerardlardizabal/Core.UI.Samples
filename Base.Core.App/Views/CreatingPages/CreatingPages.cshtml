@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewData["Title"] = "CreatingPages";
+}
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">Creating Pages "Views"</li>
+</ol>
+<div class="container-fluid">
+    <div class="animated fadeIn">
+        <div class="card">
+            <div class="card-header">File Structure</div>
+            <div class="card-body">
+                <p>
+                    To create a new View, you just need to click the Views folder, then Add > View. We use Empty(Without Model) by default/
+                    <br />
+                    <br />
+                    To create a new Controller, you just need to click the View foler, then Add > Controller. we use MVC Controller - Empty by default.
+                    <br />
+                    <br />
+                    When creating new <strong>Views</strong> (or pages), we follow a basic file structure
+                    <br /><br />
+                    <img src="~/img/FileStructure1.PNG" />
+                    <br />
+                    <br />
+                    Notice the folder CreatingPages on the <strong>Controllers</strong>, and the CreatingPages folder on <strong>Views</strong>. By default we always creat a Controller per View with the same name, this is to make it easier for us to call Views on the controller without the need to reference it by path. (ie. "../folder name/view name").<br /><br />
+
+                    Your <strong>View</strong> may still call other controllers and does not restrict it to it's controller.
+                    <br /><br />
+                    Always Remember to group your Controllers and Views per module ie. Controllers > Sales > ControllerName, Views > Sales > ControllerName, this helps us to easily identify location of views and actions just based on the module name.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">Calling your pages</div>
+            <div class="card-body">
+                <p>
+                    To call your views, you may use <strong>Tag Helpers</strong>. Add the following to your anchor or any object that requires to invoke an action
+                    <br /><br />
+                    <strong>asp-controller</strong> - Defines which controller to use<br />
+                    <strong>asp-action</strong> - Defines which action on the controller to use
+                    <br />
+                    <br />
+
+                    (View this code by looking at Views > CreatingPages > CreatingPages.cshtml)
+                    <br />
+                    <br />
+                    <a class="btn btn-primary" asp-controller="CreatingPages" asp-action="SampleMethod2">Sample View Call using Tag Helpers</a>
+                    <a class="btn btn-primary" href="/creatingPages/sampleRoute">Sample View Call using routes</a>
+                    @*To view the controller actions go to Controllers > CreatingPages > CreatingPages.cs*@
+
+                    <br />
+                    <br />
+                    <strong>Tag Helpers</strong> can also be used to invoke not just redirects but also other actions.
+
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
