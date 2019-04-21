@@ -1,0 +1,62 @@
+﻿@using Microsoft.AspNetCore.Http
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="~/css/coreui.min.css">
+    <link rel="stylesheet" href="~/css/coreui-icons.min.css">
+    <link rel="stylesheet" href="~/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/css/simple-line-icons.css">
+    <link rel="stylesheet" href="~/css/perfect-scrollbar.css">
+</head>
+<body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show sidebar-minimized">
+    <header class="app-header navbar">
+        @*MOBILE*@
+        <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+            <h4>Logo here</h4>
+        </a>
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    @Context.Session.GetString("User");
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" asp-controller="UserAccounts" asp-action="LogoutUser">
+                        <i class="fa fa-lock"></i> Logout
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <div class="app-body">
+        <div class="sidebar">
+            <nav class="sidebar-nav">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Home" asp-action="Index">
+                            <i class="nav-icon icon-speedometer"></i> Home
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="sidebar-minimizer" type="button"></button>
+        </div>
+        <main class="main">
+            @RenderBody()
+        </main>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, Bootstrap, then CoreUI  -->
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/popper.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/coreui.min.js"></script>
+    <script src="~/js/perfect-scrollbar.min.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

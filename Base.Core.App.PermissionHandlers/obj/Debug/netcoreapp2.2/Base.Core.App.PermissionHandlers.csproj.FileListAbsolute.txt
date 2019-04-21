@@ -1,0 +1,33 @@
+C:\Users\ASSUS\source\repos\Base.Core.App\Base.Core.App.PermissionHandlers\bin\Debug\netcoreapp2.2\Base.Core.App.PermissionHandlers.deps.json
+C:\Users\ASSUS\source\repos\Base.Core.App\Base.Core.App.PermissionHandlers\bin\Debug\netcoreapp2.2\Base.Core.App.PermissionHandlers.dll
+C:\Users\ASSUS\source\repos\Base.Core.App\Base.Core.App.PermissionHandlers\bin\Debug\netcoreapp2.2\Base.Core.App.PermissionHandlers.pdb
+C:\Users\ASSUS\source\repos\Base.Core.App\Base.Core.App.PermissionHandlers\obj\Debug\netcoreapp2.2\Base.Core.App.PermissionHandlers.csproj.CoreCompileInputs.cache
+C:\Users\ASSUS\source\repos\Base.Core.App\Base.Core.App.PermissionHandlers\obj\Debug\netcoreapp2.2\Base.Core.App.PermissionHandlers.AssemblyInfoInputs.cache
+C:\Users\ASSUS\source\repos\Base.Core.App\Base.Core.App.PermissionHandlers\obj\Debug\netcoreapp2.2\Base.Core.App.PermissionHandlers.AssemblyInfo.cs
+C:\Users\ASSUS\source\repos\Base.Core.App\Base.Core.App.PermissionHandlers\obj\Debug\netcoreapp2.2\Base.Core.App.PermissionHandlers.dll
+C:\Users\ASSUS\source\repos\Base.Core.App\Base.Core.App.PermissionHandlers\obj\Debug\netcoreapp2.2\Base.Core.App.PermissionHandlers.pdb
+C:\Users\ASSUS\source\repos\Base.Core.App\Base.Core.App.PermissionHandlers\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Authorization.dll
+C:\Users\ASSUS\source\repos\Base.Core.App\Base.Core.App.PermissionHandlers\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Authorization.xml
+C:\Users\ASSUS\source\repos\Base.Core.App\Base.Core.App.PermissionHandlers\obj\Debug\netcoreapp2.2\Base.Core.App.PermissionHandlers.csproj.CopyComplete
+C:\My Dev Files\Gerard\Core.UI\Base.Core.UI\Base.Core.App.PermissionHandlers\bin\Debug\netcoreapp2.2\Base.Core.App.PermissionHandlers.deps.json
+C:\My Dev Files\Gerard\Core.UI\Base.Core.UI\Base.Core.App.PermissionHandlers\bin\Debug\netcoreapp2.2\Base.Core.App.PermissionHandlers.dll
+C:\My Dev Files\Gerard\Core.UI\Base.Core.UI\Base.Core.App.PermissionHandlers\bin\Debug\netcoreapp2.2\Base.Core.App.PermissionHandlers.pdb
+C:\My Dev Files\Gerard\Core.UI\Base.Core.UI\Base.Core.App.PermissionHandlers\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Authorization.dll
+C:\My Dev Files\Gerard\Core.UI\Base.Core.UI\Base.Core.App.PermissionHandlers\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Authorization.xml
+C:\My Dev Files\Gerard\Core.UI\Base.Core.UI\Base.Core.App.PermissionHandlers\obj\Debug\netcoreapp2.2\Base.Core.App.PermissionHandlers.csproj.CoreCompileInputs.cache
+C:\My Dev Files\Gerard\Core.UI\Base.Core.UI\Base.Core.App.PermissionHandlers\obj\Debug\netcoreapp2.2\Base.Core.App.PermissionHandlers.AssemblyInfoInputs.cache
+C:\My Dev Files\Gerard\Core.UI\Base.Core.UI\Base.Core.App.PermissionHandlers\obj\Debug\netcoreapp2.2\Base.Core.App.PermissionHandlers.AssemblyInfo.cs
+C:\My Dev Files\Gerard\Core.UI\Base.Core.UI\Base.Core.App.PermissionHandlers\obj\Debug\netcoreapp2.2\Base.Core.App.PermissionHandlers.csproj.CopyComplete
+C:\My Dev Files\Gerard\Core.UI\Base.Core.UI\Base.Core.App.PermissionHandlers\obj\Debug\netcoreapp2.2\Base.Core.App.PermissionHandlers.dll
+C:\My Dev Files\Gerard\Core.UI\Base.Core.UI\Base.Core.App.PermissionHandlers\obj\Debug\netcoreapp2.2\Base.Core.App.PermissionHandlers.pdb
+C:\Users\Gerard\Desktop\Dev Projects\Base.Core.UI\Base.Core.App.PermissionHandlers\bin\Debug\netcoreapp2.2\Base.Core.App.PermissionHandlers.deps.json
+C:\Users\Gerard\Desktop\Dev Projects\Base.Core.UI\Base.Core.App.PermissionHandlers\bin\Debug\netcoreapp2.2\Base.Core.App.PermissionHandlers.dll
+C:\Users\Gerard\Desktop\Dev Projects\Base.Core.UI\Base.Core.App.PermissionHandlers\bin\Debug\netcoreapp2.2\Base.Core.App.PermissionHandlers.pdb
+C:\Users\Gerard\Desktop\Dev Projects\Base.Core.UI\Base.Core.App.PermissionHandlers\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Gerard\Desktop\Dev Projects\Base.Core.UI\Base.Core.App.PermissionHandlers\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Authorization.xml
+C:\Users\Gerard\Desktop\Dev Projects\Base.Core.UI\Base.Core.App.PermissionHandlers\obj\Debug\netcoreapp2.2\Base.Core.App.PermissionHandlers.csproj.CoreCompileInputs.cache
+C:\Users\Gerard\Desktop\Dev Projects\Base.Core.UI\Base.Core.App.PermissionHandlers\obj\Debug\netcoreapp2.2\Base.Core.App.PermissionHandlers.AssemblyInfoInputs.cache
+C:\Users\Gerard\Desktop\Dev Projects\Base.Core.UI\Base.Core.App.PermissionHandlers\obj\Debug\netcoreapp2.2\Base.Core.App.PermissionHandlers.AssemblyInfo.cs
+C:\Users\Gerard\Desktop\Dev Projects\Base.Core.UI\Base.Core.App.PermissionHandlers\obj\Debug\netcoreapp2.2\Base.Core.App.PermissionHandlers.csproj.CopyComplete
+C:\Users\Gerard\Desktop\Dev Projects\Base.Core.UI\Base.Core.App.PermissionHandlers\obj\Debug\netcoreapp2.2\Base.Core.App.PermissionHandlers.dll
+C:\Users\Gerard\Desktop\Dev Projects\Base.Core.UI\Base.Core.App.PermissionHandlers\obj\Debug\netcoreapp2.2\Base.Core.App.PermissionHandlers.pdb
