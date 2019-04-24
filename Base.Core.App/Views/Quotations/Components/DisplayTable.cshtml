@@ -1,0 +1,129 @@
+﻿@model IEnumerable<Base.Core.App.Models.Quotations.QuotationsModel.QuotationDisplayTable>
+
+<div class="table-responsive">
+    <table 
+           class="table table-bordered" 
+           id="quotationDisplay" 
+           
+           data-click-to-select="true" 
+           data-detail-view="true"
+           data-detail-formatter="detailFormatter">
+        <thead>
+            <tr>
+                <th data-field="state" data-checkbox="true"></th>
+                <th data-field="quoteId">Quote Id</th>
+                <th data-field="customer">Customer</th>
+                <th data-field="date">Date</th>
+                <th data-field="channel">Channel</th>
+                <th data-field="branch">Branch</th>
+                <th data-field="encoder">Encoder</th>
+                <th data-field="status">Status</th>
+                <th data-field="subtotal">Subtotal</th>
+                <th data-field="itemDisc">Item Disc</th>
+                <th data-field="overallDisc">Overall Disc</th>
+                <th data-field="total">Total</th>
+                @*<th>Quote Id</th>
+                <th>Customer</th>
+                <th>Date</th>
+                <th>Channel</th>
+                <th>Branch</th>
+                <th>Encoder</th>
+                <th>Status</th>
+                <th>Subtotal</th>
+                <th>Item Disc</th>
+                <th>Overall Disc</th>
+                <th>Total</th>*@
+            </tr>
+        </thead>
+        @*<tbody>
+            @if (Model != null)
+            {
+                @foreach (var row in Model)
+                {
+                    <tr>
+                        <th data-field="state" data-checkbox="true"></th>
+                        <td>@row.quoteId</td>
+                        <td>@row.customer</td>
+                        <td>@row.date</td>
+                        <td>@row.channel</td>
+                        <td>@row.branch</td>
+                        <td>@row.encoder</td>
+                        <td>@row.status</td>
+                        <td>@row.subtotal</td>
+                        <td>@row.itemDisc</td>
+                        <td>@row.overallDisc</td>
+                        <td>@row.total</td>
+                    </tr>
+
+
+                }
+            }
+        </tbody>*@
+    </table>
+</div>
+    
+<script>
+    var data = [{
+        quoteId: "1",
+        customer: "gerard",
+        date: "04/12/2019",
+        channel: "All Channel",
+        branch: "pasig",
+        encoder: "siena",
+        status: "Pending",
+        subtotal: 120.00,
+        itemDisc: 0.00,
+        overallDisc: 0.00,
+        total: 120.00
+    },
+    {
+        quoteId: "2",
+        customer: "danica",
+        date: "04/12/2019",
+        channel: "All Channel",
+        branch: "pasig",
+        encoder: "jangku",
+        status: "Pending",
+        subtotal: 120.00,
+        itemDisc: 0.00,
+        overallDisc: 0.00,
+        total: 120.00
+        }]
+
+    $(function () {
+        $('#quotationDisplay').bootstrapTable({
+            data: @Html.Raw(Json.Serialize(Model))
+        });
+        //$('#quotationDisplay').on('check.bs.table', function (e, row, $el) {
+        //    alert('check: ' + row.quoteId);
+        //});
+        //$('#quotationDisplay').on('uncheck.bs.table', function (e, row, $el) {
+        //    alert('uncheck: ' + row.quoteId);
+        //});
+    });
+
+    function detailFormatter(index, row) {
+        //var html = []
+        //$.each(row, function (key, value) {
+        //    html.push('<p><b>' + key + ':</b> ' + value + '</p>')
+        //})
+        //return html.join('')
+        var details = row.details;
+        var table = $('<table>').addClass('table');
+        table.append('<thead>').children('thead')
+            .append('<tr />').children('tr').append('<th class="p-2">Qty</th>' +
+            '<th class="p-2">Unit</th>' +
+            '<th class="p-2">Code</th>' +
+            '<th class="p-2">Desc</th>' +
+            '<th class="p-2">Price</th>' +
+            '<th class="p-2">Subtotal</th>');
+        $.each(details, function (rowIndex, r) {
+            var row = $("<tr/>");
+            $.each(r, function (colIndex, c) {
+                row.append($("<td/>").text(c));
+            });
+            table.append(row);
+        });
+        return table
+    }
+</script>
