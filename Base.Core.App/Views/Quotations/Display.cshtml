@@ -1,0 +1,133 @@
+﻿@{ 
+    Layout = "_Layout";
+}
+@{
+    ViewData["Title"] = "Display";
+}
+<div class="p-5">
+    <h3 class="text-primary">Display Submitted Quotation</h3>
+    <hr />
+    <div class="pr-2 pl-2">
+        <div class="card">
+            <div class="card-header bg-info">
+               <h5 class="m-0">Search Quotation</h5> 
+            </div>
+            <div class="card-body">
+                @*Start of Search*@
+                <div>
+                    <div class="d-md-flex ">
+                        <div class="col-md-6">
+                            <div class="d-flex flex-column">
+                                <div class="d-flex align-items-center no-gutters p-2">
+                                    <div class="col-md-3">
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input" value="">Date
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 d-md-flex flex-row no-gutters align-items-center">
+                                        <div class="col-md-5"><input type="date" class="form-control"></div>
+                                        <div class="col-md-2 text-center">to</div>
+                                        <div class="col-md-5"><input type="date" class="form-control"></div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center no-gutters p-2">
+                                    <div class="col-md-3">
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input" value="">Itemcode
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9"><input type="text" class="form-control"></div>
+                                </div>
+
+                                <div class="d-flex align-items-center no-gutters p-2">
+                                    <div class="col-md-3">
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input" value="">Description
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9"><input type="text" class="form-control"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="d-flex flex-column">
+                                <div class="d-flex align-items-center no-gutters p-2">
+                                    <div class="col-md-3">
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input" value="">Customer
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9"><input type="text" class="form-control"></div>
+                                </div>
+
+                                <div class="d-flex align-items-center no-gutters p-2">
+                                    <div class="col-md-3">
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input" value="">Branch
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9"><input type="text" class="form-control"></div>
+                                </div>
+
+                                <div class="d-flex align-items-center no-gutters p-2">
+                                    <div class="col-md-3">
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input" value="">Quote Id
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9"><input type="text" class="form-control"></div>
+                                </div>
+                                <div>
+                                    <button class="btn btn-outline-info float-right" onclick="getItemList()">Search</button>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                </div>
+                @*End of Search*@
+                <hr />
+
+                @*Start of Quotation Table*@
+                <div class="p-3">
+                    <div id="displayTable"></div>
+                </div> 
+                @*End of Quotation Table*@
+                
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<script>
+    function getItemList() {
+        $.ajax({
+            method: 'GET',
+            url: '@Url.Action("GetQuotationList", "Quotations")'
+
+        }).done(function (data, statusText, xhdr) {
+            $("#displayTable").html(data);
+
+        }).fail(function (xhdr, statusText, errorText) {
+            $("displayTable").text(JSON.stringify(xhdr));
+
+        })
+
+    }
+</script>
